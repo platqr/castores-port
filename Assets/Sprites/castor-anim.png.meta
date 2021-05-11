@@ -104,7 +104,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -166,10 +166,10 @@ TextureImporter:
       name: castor-anim_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 166
-        width: 60
-        height: 57
+        x: 7
+        y: 162
+        width: 52
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: castor-anim_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 164
-        width: 62
-        height: 56
+        x: 71
+        y: 163
+        width: 53
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: castor-anim_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 166
-        width: 56
-        height: 60
+        x: 135
+        y: 161
+        width: 53
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,9 +230,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 166
-        width: 54
-        height: 60
+        y: 161
+        width: 53
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: castor-anim_4
       rect:
         serializedVersion: 2
-        x: 258
-        y: 166
-        width: 58
-        height: 57
+        x: 263
+        y: 161
+        width: 53
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: castor-anim_5
       rect:
         serializedVersion: 2
-        x: 321
-        y: 166
-        width: 61
-        height: 54
+        x: 327
+        y: 161
+        width: 53
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: castor-anim_6
       rect:
         serializedVersion: 2
-        x: 386
-        y: 166
-        width: 62
-        height: 60
+        x: 392
+        y: 161
+        width: 52
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: castor-anim_7
       rect:
         serializedVersion: 2
-        x: 450
-        y: 166
-        width: 58
-        height: 60
+        x: 456
+        y: 161
+        width: 52
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: castor-anim_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 87
-        width: 56
-        height: 65
+        x: 6
+        y: 83
+        width: 52
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,10 +355,10 @@ TextureImporter:
       name: castor-anim_9
       rect:
         serializedVersion: 2
-        x: 82
-        y: 84
-        width: 37
-        height: 77
+        x: 72
+        y: 83
+        width: 48
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,9 +376,9 @@ TextureImporter:
       name: castor-anim_10
       rect:
         serializedVersion: 2
-        x: 143
-        y: 86
-        width: 43
+        x: 137
+        y: 83
+        width: 47
         height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -397,10 +397,10 @@ TextureImporter:
       name: castor-anim_11
       rect:
         serializedVersion: 2
-        x: 198
-        y: 100
-        width: 58
-        height: 55
+        x: 200
+        y: 83
+        width: 49
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: castor-anim_12
       rect:
         serializedVersion: 2
-        x: 260
-        y: 90
-        width: 59
-        height: 63
+        x: 263
+        y: 86
+        width: 51
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +439,10 @@ TextureImporter:
       name: castor-anim_13
       rect:
         serializedVersion: 2
-        x: 337
-        y: 81
-        width: 40
-        height: 70
+        x: 325
+        y: 83
+        width: 55
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,10 +460,10 @@ TextureImporter:
       name: castor-anim_14
       rect:
         serializedVersion: 2
-        x: 388
-        y: 80
-        width: 57
-        height: 58
+        x: 391
+        y: 84
+        width: 52
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +481,10 @@ TextureImporter:
       name: castor-anim_15
       rect:
         serializedVersion: 2
-        x: 449
-        y: 86
-        width: 58
-        height: 55
+        x: 455
+        y: 83
+        width: 52
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,10 +502,10 @@ TextureImporter:
       name: castor-anim_16
       rect:
         serializedVersion: 2
-        x: 6
-        y: 8
-        width: 56
-        height: 57
+        x: 7
+        y: 3
+        width: 52
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,9 +524,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 70
-        y: 8
-        width: 55
-        height: 55
+        y: 3
+        width: 52
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,10 +544,10 @@ TextureImporter:
       name: castor-anim_18
       rect:
         serializedVersion: 2
-        x: 129
-        y: 8
-        width: 61
-        height: 57
+        x: 134
+        y: 3
+        width: 53
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,9 +566,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 8
-        width: 54
-        height: 55
+        y: 3
+        width: 52
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,10 +586,10 @@ TextureImporter:
       name: castor-anim_20
       rect:
         serializedVersion: 2
-        x: 261
-        y: 8
-        width: 59
-        height: 62
+        x: 263
+        y: 6
+        width: 49
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,10 +607,10 @@ TextureImporter:
       name: castor-anim_21
       rect:
         serializedVersion: 2
-        x: 333
-        y: 1
-        width: 43
-        height: 74
+        x: 327
+        y: 6
+        width: 49
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,10 +628,10 @@ TextureImporter:
       name: castor-anim_22
       rect:
         serializedVersion: 2
-        x: 393
-        y: 4
+        x: 391
+        y: 3
         width: 50
-        height: 71
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -649,10 +649,10 @@ TextureImporter:
       name: castor-anim_23
       rect:
         serializedVersion: 2
-        x: 448
-        y: 4
-        width: 62
-        height: 42
+        x: 454
+        y: 2
+        width: 48
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

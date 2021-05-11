@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using  UnityEngine.UI;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Main_Scripts : MonoBehaviour
@@ -13,6 +13,14 @@ public class Main_Scripts : MonoBehaviour
     [SerializeField] private Text _timerText;
     [SerializeField] private Text _scoreText;
 
+    [SerializeField] private Sprite _playBtnSprite;
+    [SerializeField] private Sprite _pauseBtnSprite;
+    [SerializeField] private Image _pausebtnImage;
+    [SerializeField] private Sprite _musicPlayBtnSprite;
+    [SerializeField] private Sprite _musicPauseBtnSprite;
+    [SerializeField] private Image _musicbtnImage;
+    [SerializeField] private GameObject _gameOverPanel;
+
     [SerializeField] private AudioSource _gameOverSfx;
     [SerializeField] private AudioSource _pointUpSfx;
     [SerializeField] private AudioSource _music;
@@ -20,18 +28,17 @@ public class Main_Scripts : MonoBehaviour
     [SerializeField] private float _gameTimer = 32;
     [SerializeField] private int _score;
     private bool _isGameOver = false;
+    private bool _isPaused = false;
+    private bool _musicPaused = false;
 
     void Update()
     {
-        Reset();
         GameTimer();
+        PressPToPause();
     }
 
-    private void Reset(){
-        if(Input.GetKey("r"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+    public void Reset(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void GameTimer(){
@@ -60,7 +67,50 @@ public class Main_Scripts : MonoBehaviour
             _player.active = false;
             _NutMg.active = false;
             _gameTimer=0;
+            _gameOverPanel.active = true;
         }
         _isGameOver = true;
     }
+
+    private void PressPToPause(){
+        if(Input.GetKeyDown("p"))
+        {
+            PauseGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        if(_isPaused){
+            Time.timeScale = 1;
+            _isPaused = false;
+            _pausebtnImage.sprite = _pauseBtnSprite;
+        } else {
+            Time.timeScale = 0;
+            _isPaused = true;
+            _pausebtnImage.sprite = _playBtnSprite;
+        }
+    }
+
+    public void PauseMusic()
+    {
+        if(_musicPaused){
+            _music.Play();
+            _musicPaused = false;
+            _musicbtnImage.sprite = _musicPauseBtnSprite;
+        } else {
+            _music.Pause();
+            _musicPaused = true;
+            _musicbtnImage.sprite = _musicPlayBtnSprite;
+        }
+    }
+
+    public void Exit(){
+        Application.Quit();
+    }
+
+    public void Level2(){
+        SceneManager.LoadScene(1);
+    }
+
 }
