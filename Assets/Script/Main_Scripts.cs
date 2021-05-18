@@ -109,8 +109,9 @@ public class Main_Scripts : MonoBehaviour
         Application.Quit();
     }
 
-    public void Level2(){
-        SceneManager.LoadScene(1);
+    public void NextLevel(){
+        if (SceneManager.GetActiveScene().buildIndex <3)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 
 }
