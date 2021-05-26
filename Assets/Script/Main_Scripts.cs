@@ -9,9 +9,11 @@ public class Main_Scripts : MonoBehaviour
     
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _NutMg;
+    [SerializeField] private GameObject _SeedMg;
 
     [SerializeField] private Text _timerText;
     [SerializeField] private Text _scoreText;
+    [SerializeField] private Text _livesText;
 
     [SerializeField] private Sprite _playBtnSprite;
     [SerializeField] private Sprite _pauseBtnSprite;
@@ -22,11 +24,14 @@ public class Main_Scripts : MonoBehaviour
     [SerializeField] private GameObject _gameOverPanel;
 
     [SerializeField] private AudioSource _gameOverSfx;
+    [SerializeField] private AudioSource _crackedNutSfx;
+    [SerializeField] private AudioSource _takeLifeSfx;
     [SerializeField] private AudioSource _pointUpSfx;
     [SerializeField] private AudioSource _music;
 
     [SerializeField] private float _gameTimer = 32;
     [SerializeField] private int _score;
+    [SerializeField] private int _lives = 3;
     private bool _isGameOver = false;
     private bool _isPaused = false;
     private bool _musicPaused = false;
@@ -35,6 +40,7 @@ public class Main_Scripts : MonoBehaviour
     {
         GameTimer();
         PressPToPause();
+        Killed();
     }
 
     public void Reset(){
@@ -60,12 +66,31 @@ public class Main_Scripts : MonoBehaviour
         _scoreText.text = "Score: " + _score;
     }
 
+    public void TakeLife(){
+        _lives -= 1;
+        _takeLifeSfx.Play();
+        _livesText.text = "Lives: " + _lives;
+    }
+
+    public void CrackSfx(){
+        _crackedNutSfx.Play();
+    }
+
+    public void Killed(){
+        if (_lives <= 0){
+            GameOver();
+        }
+    }
+
     public void GameOver(){
         if (!_isGameOver){
             _gameOverSfx.Play();
             _music.Stop();
             _player.active = false;
             _NutMg.active = false;
+            if(_SeedMg != null){
+                _SeedMg.active = false;
+            }
             _gameTimer=0;
             _gameOverPanel.active = true;
         }
@@ -110,7 +135,7 @@ public class Main_Scripts : MonoBehaviour
     }
 
     public void NextLevel(){
-        if (SceneManager.GetActiveScene().buildIndex <3)
+        if (SceneManager.GetActiveScene().buildIndex <4)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 
